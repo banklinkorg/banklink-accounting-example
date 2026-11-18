@@ -7,7 +7,7 @@ A runnable, single-company accounting application for a fictional South African 
 Requirements: Docker with Compose; Node 22.13+ only if you use the setup script directly. Docker itself uses Node 24.
 
 ```sh
-git clone https://github.com/aurvex-labs/banklink-accounting-example.git
+git clone https://github.com/banklinkorg/banklink-accounting-example.git
 cd banklink-accounting-example
 node scripts/setup.mjs
 docker compose up --build
