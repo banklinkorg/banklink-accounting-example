@@ -4,12 +4,13 @@ body,
   margin: 0;
   min-height: 100%;
   font-family: "Red Hat Text Variable", Arial, sans-serif;
-  background: #f5f6f8;
-  color: #202b3b;
+  background: #f0f5ef;
+  color: #263f33;
 }
 #root > .ll {
   min-height: 100vh;
   border: 0;
+  border-radius: 0;
 }
 .auth {
   min-height: 100vh;
@@ -19,14 +20,19 @@ body,
   box-sizing: border-box;
 }
 .auth > div {
-  max-width: 400px;
+  box-sizing: border-box;
+  max-width: 440px;
   width: 100%;
+  padding: 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #203e3610;
 }
 .auth-wordmark {
   font-family: "Red Hat Display Variable", Arial, sans-serif;
   font-size: 28px;
   font-weight: 700;
-  color: #122850;
+  color: #203e36;
 }
 .auth h1 {
   font-family: "Red Hat Display Variable", Arial, sans-serif;
@@ -35,7 +41,7 @@ body,
 }
 .auth p,
 .auth small {
-  color: #596273;
+  color: #607265;
   line-height: 1.6;
 }
 .auth form {
@@ -46,26 +52,28 @@ body,
   gap: 8px;
 }
 .auth input {
-  border: 1px solid #9aa8ba;
+  border: 1px solid #b4c6ae;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   font: inherit;
   padding: 12px;
   margin-bottom: 18px;
 }
 .auth button {
-  background: #1e3a8a;
+  background: #38674f;
   color: #fff;
   border: 0;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 12px 24px;
   font: inherit;
   cursor: pointer;
 }
 .auth [role="alert"] {
-  color: #a32318;
+  color: #a13b27;
 }
 .auth :focus-visible {
-  outline: 2px solid #315f9c;
+  outline: 2px solid #4b805e;
   outline-offset: 3px;
 }
+
+.auth button:hover { background:#203e36; }

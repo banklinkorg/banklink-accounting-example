@@ -1,19 +1,19 @@
 .ll {
-  --ll-navy: #1e3a8a;
-  --ll-line: #dde1e7;
-  --ll-muted: #596273;
+  --ll-accent: #38674f;
+  --ll-line: #dfe8df;
+  --ll-muted: #607265;
   display: flex;
   position: relative;
   isolation: isolate;
   min-height: 760px;
-  background: #f5f6f8;
-  color: #202b3b;
+  background: #f0f5ef;
+  color: #263f33;
   font-family: "Red Hat Text Variable", "Red Hat Text", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
-  border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border: 0;
+  border-radius: 18px; /* deslop-ok: Standalone accounting theme has rounded app surfaces. */
   overflow: hidden;
 }
 .ll * {
@@ -31,34 +31,34 @@
   justify-content: center;
   gap: 8px;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   background: #fff;
   padding: 9px 14px;
-  color: #26364b;
+  color: #294537;
   font-weight: 600;
   transition: background 0.15s;
 }
 .ll button:hover {
-  background: #edf1f6;
+  background: #eaf1e7;
 }
 .ll button:disabled {
   cursor: wait;
   opacity: 0.6;
 }
 .ll :is(button, a, input, select):focus-visible {
-  outline: 2px solid #315f9c;
+  outline: 2px solid #4b805e;
   outline-offset: 3px;
 }
 .ll .ll-primary {
-  background: var(--ll-navy);
-  border-color: var(--ll-navy);
+  background: var(--ll-accent);
+  border-color: var(--ll-accent);
   color: #fff;
 }
 .ll .ll-primary:hover {
-  background: #122850;
+  background: #203e36;
 }
 .ll a {
-  color: var(--ll-navy);
+  color: var(--ll-accent);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -96,7 +96,7 @@
   width: 190px;
   flex-shrink: 0;
   background: #fff;
-  border-right: 1px solid var(--ll-line);
+  border-right: 0;
   padding: 26px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -112,13 +112,13 @@
   display: grid;
   place-items: center;
   color: #fff;
-  background: #122850;
+  background: #203e36;
   width: 32px;
   height: 32px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .ll-brand-dot {
-  color: #315f9c;
+  color: #4b805e;
   margin-left: -7px;
 }
 .ll-company {
@@ -138,8 +138,8 @@
   width: 29px;
   height: 29px;
   border-radius: 50%;
-  background: #e8edf5;
-  color: #334668;
+  background: #e8f0e4;
+  color: #365c42;
   font-size: 11px;
   font-weight: 700;
 }
@@ -153,25 +153,25 @@
   padding: 11px 12px;
   font-weight: 500;
   background: transparent;
-  color: #596273;
+  color: #607265;
 }
 .ll-sidebar nav button[aria-current="page"] {
-  background: #eaf0fb;
-  color: #1e3a8a;
+  background: #d9edb4;
+  color: #38674f;
   font-weight: 650;
 }
 .ll-sidebar nav b {
   margin-left: auto;
   background: #fff;
   padding: 0 6px;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 12px;
 }
 .ll-sidebar-foot {
   margin-top: auto;
   padding: 40px 7px 0;
   font-size: 12px;
-  color: #596273;
+  color: #607265;
 }
 .ll-sidebar-foot small {
   font-size: 11px;
@@ -186,10 +186,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
-  border-bottom: 1px solid var(--ll-line);
+  background: #f0f5ef;
+  border-bottom: 0;
   font-size: 12px;
-  color: #596273;
+  color: #607265;
 }
 .ll-topbar > span,
 .ll-topbar > div {
@@ -201,7 +201,7 @@
   font-size: 11px;
   border: 1px solid var(--ll-line);
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .ll-body {
   padding: 30px;
@@ -222,7 +222,7 @@
 .ll-period {
   background: #fff;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 8px 12px;
   white-space: nowrap;
   font-size: 12px;
@@ -234,13 +234,13 @@
   margin-bottom: 22px;
 }
 .ll-cash {
-  background: #122850;
+  background: #203e36;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 25px;
 }
 .ll-cash > span {
-  color: #d4deed;
+  color: #d3e5d1;
   font-size: 13px;
 }
 .ll-cash strong {
@@ -251,7 +251,7 @@
   letter-spacing: -0.03em;
 }
 .ll-cash p {
-  color: #d4deed;
+  color: #d3e5d1;
   font-size: 12px;
 }
 .ll-cash button {
@@ -259,12 +259,12 @@
 }
 .ll-cash-note {
   font-size: 10px;
-  color: #d4deed;
+  color: #d3e5d1;
   margin-top: 15px;
 }
 .ll-owings {
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   background: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -291,7 +291,7 @@
   border: 0;
   padding: 0;
   font-size: 12px;
-  color: var(--ll-navy);
+  color: var(--ll-accent);
 }
 .ll-columns {
   display: grid;
@@ -301,7 +301,7 @@
 .ll-panel {
   background: #fff;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -336,15 +336,15 @@
 }
 .ll-bar-chart > div > div {
   height: 14px;
-  background: #f0f2f5;
+  background: #edf2e9;
 }
 .ll-bar-chart i {
   display: block;
   height: 100%;
-  background: #315f9c;
+  background: #4b805e;
 }
 .ll-bar-chart > div:nth-child(2) i {
-  background: #9aa8ba;
+  background: #b9c9ad;
 }
 .ll-bar-chart strong {
   text-align: right;
@@ -390,22 +390,22 @@
 }
 .ll-status {
   display: inline-block;
-  background: #f3f1ea;
-  color: #6c5420;
+  background: #f6eed9;
+  color: #795a20;
   font-size: 10px;
   font-weight: 600;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 4px 7px;
   white-space: nowrap;
   text-align: center;
   justify-self: end;
 }
 .ll-good {
-  background: #e9f4ef;
-  color: #23604c;
+  background: #e5f1e3;
+  color: #32643e;
 }
 .ll-credit {
-  color: #23604c;
+  color: #32643e;
 }
 .ll-footer {
   display: flex;
@@ -423,7 +423,7 @@
   border: 1px solid var(--ll-line);
   padding: 20px;
   margin-bottom: 24px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .ll-bank-summary p {
   margin: 3px 0 0;
@@ -462,8 +462,8 @@
   padding: 8px;
 }
 .ll-tabs button[aria-pressed="true"] {
-  border-color: #b3c2dd;
-  color: var(--ll-navy);
+  border-color: #b4cba7;
+  color: var(--ll-accent);
   background: #fff;
 }
 .ll-search {
@@ -472,7 +472,7 @@
   gap: 8px;
   border: 1px solid var(--ll-line);
   background: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 8px 10px;
   max-width: 350px;
 }
@@ -485,11 +485,11 @@
 }
 .ll input,
 .ll select {
-  border: 1px solid #c9ced7;
+  border: 1px solid #cddbc9;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   background: #fff;
-  color: #26364b;
+  color: #294537;
   max-width: 100%;
   min-height: 39px;
 }
@@ -497,7 +497,7 @@
   overflow: auto;
   width: 100%;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   background: #fff;
   margin-top: 16px;
 }
@@ -509,7 +509,7 @@
 }
 .ll th {
   text-align: left;
-  background: #f8f9fb;
+  background: #f4f7f0;
   color: var(--ll-muted);
   font-weight: 500;
   padding: 13px 16px;
@@ -517,7 +517,7 @@
 }
 .ll td {
   padding: 16px;
-  border-bottom: 1px solid #e9ecf1;
+  border-bottom: 1px solid #edf1e8;
 }
 .ll tr:last-child td {
   border-bottom: 0;
@@ -529,7 +529,7 @@
   font-size: 12px;
   font-weight: 500;
   text-align: left;
-  color: var(--ll-navy);
+  color: var(--ll-accent);
 }
 .ll-number {
   text-align: right !important;
@@ -542,7 +542,7 @@
   padding: 22px;
   background: #fff;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   margin: 18px 0;
 }
 .ll-summary-line strong {
@@ -553,11 +553,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 1px solid #b9cbdc;
-  background: #edf3f8;
-  color: #263f57;
+  border: 1px solid #bfd3b5;
+  background: #edf5e5;
+  color: #355442;
   padding: 12px 15px;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-bottom: 18px;
   font-size: 12px;
 }
@@ -568,8 +568,8 @@
   background: transparent;
 }
 .ll-error {
-  background: #fff0ee;
-  color: #a32318;
+  background: #fff0eb;
+  color: #a13b27;
   padding: 12px;
   margin: 12px 0;
   font-size: 13px;
@@ -585,7 +585,7 @@
   border-left: 1px solid var(--ll-line);
   padding: 25px;
   overflow: auto;
-  box-shadow: -5px 0 20px #12285012;
+  box-shadow: -5px 0 20px #203e3612;
 }
 .ll-review-amount {
   display: block;
@@ -597,15 +597,15 @@
   gap: 6px;
   margin-bottom: 15px;
   font-size: 12px;
-  color: #44516a;
+  color: #536951;
 }
 .ll-review label {
   margin-top: 20px;
 }
 .ll-match {
   padding: 12px;
-  background: #e9f4ef;
-  color: #23604c;
+  background: #e5f1e3;
+  color: #32643e;
 }
 .ll-review details {
   margin-top: 35px;
@@ -615,7 +615,7 @@
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   font-size: 11px;
-  background: #f5f6f8;
+  background: #f0f5ef;
   padding: 12px;
 }
 .ll-tax-rows > div {
@@ -631,7 +631,7 @@
   padding: 26px;
   background: #fff;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .ll-report > p {
   font-size: 12px;
@@ -641,7 +641,7 @@
   display: grid;
   justify-items: center;
   padding: 40px;
-  color: #596273;
+  color: #607265;
 }
 .ll-empty h3 {
   margin-top: 12px;
@@ -663,7 +663,7 @@
   position: absolute;
   inset: 0;
   z-index: 4;
-  background: #12285066;
+  background: #203e3666;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -674,10 +674,10 @@
   background: #fff;
   padding: 25px;
   border: 1px solid var(--ll-line);
-  border-radius: 4px;
+  border-radius: 10px;
   width: 460px;
   max-width: 100%;
-  box-shadow: 0 8px 24px #12285022;
+  box-shadow: 0 8px 24px #203e3622;
 }
 .ll-form-columns {
   display: grid;
@@ -862,4 +862,52 @@
   .ll * {
     transition: none !important;
   }
+}
+
+/* Ledgerline: forest navigation, sage canvas and softly raised working surfaces. */
+.ll { --ll-shadow:0 4px 18px #203e3609; }
+.ll-sidebar { background:#203e36; color:#f4f8ef; }
+.ll .ll-brand { color:#f4f8ef; background:transparent; }
+.ll .ll-brand:hover { background:#305346; }
+.ll-brandmark { background:#d9edb4; color:#203e36; border-radius:11px; }
+.ll-brand-dot { color:#c7dfa0; }
+.ll-company { border-color:#3d5c4e; }
+.ll-sidebar .ll-company small,.ll-sidebar-foot,.ll-sidebar-foot small { color:#c5d7c9; }
+.ll-sidebar .ll-avatar { background:#496950; color:#edf5e7; }
+.ll-sidebar nav button { color:#d5e4d6; border-radius:11px; }
+.ll-sidebar nav button:hover { background:#305346; }
+.ll-sidebar nav button[aria-current="page"] { color:#203e36; background:#d9edb4; }
+.ll-sidebar nav b { background:#f2f8df; color:#365442; border-radius:6px; }
+.ll-topbar { background:transparent; }
+.ll .ll-sample,.ll-period { background:#fff; border:0; box-shadow:var(--ll-shadow); }
+.ll-cash { background:#d9edb4; color:#203e36; border-radius:20px; padding:27px; } /* deslop-ok: Independent accounting example theme requested by user. */
+.ll-cash > span,.ll-cash p,.ll-cash-note { color:#405c36; }
+.ll-cash strong { font-weight:600; }
+.ll-cash button { background:#fff; border:0; color:#294b35; box-shadow:0 2px 8px #203e360d; }
+.ll-owings,.ll-panel,.ll-bank-summary,.ll-summary-line,.ll-report { border:0; border-radius:18px; box-shadow:var(--ll-shadow); } /* deslop-ok: Independent accounting example uses soft cards. */
+.ll-owings > div + div { border-color:#e6eddf; }
+.ll-panel { padding:24px; }
+.ll .ll-task { padding:15px 8px; border-color:#edf1e8; }
+.ll .ll-task:hover { background:#f5f8f0; border-radius:10px; }
+.ll .ll-activity { border-color:#edf1e8; }
+.ll-bar-chart > div > div,.ll-bar-chart i { border-radius:8px; }
+.ll-bar-chart i { background:#4b805e; }
+.ll-bar-chart > div:nth-child(2) i { background:#b9a98c; }
+.ll-bar-chart > div:nth-child(3) i { background:#90ae70; }
+.ll-status { border-radius:20px; padding:4px 9px; } /* deslop-ok: Accounting status badges are deliberately rounded. */
+.ll-table-wrap { border:0; border-radius:16px; box-shadow:var(--ll-shadow); } /* deslop-ok: Rounded standalone table surface. */
+.ll th { background:#e8f0e1; border-bottom:0; color:#4a664b; }
+.ll td { border-color:#edf1e8; }
+.ll tr:hover td { background:#f7faf3; }
+.ll-tabs button[aria-pressed="true"] { background:#e1edcf; border-color:transparent; color:#294b35; }
+.ll-review { border:0; border-radius:18px 0 0 18px; box-shadow:-6px 0 24px #203e3614; } /* deslop-ok: Accounting detail drawer follows its own soft theme. */
+.ll-match,.ll-notice,.ll-error { border-radius:10px; }
+.ll-modal { border:0; border-radius:20px; } /* deslop-ok: Standalone accounting example modal theme. */
+@media(max-width:600px) {
+  .ll-sidebar { border-bottom:0; padding:16px 12px 10px; }
+  .ll-topbar { border-bottom:0; }
+  .ll-body { padding:22px 16px; }
+  .ll-cash { padding:22px; }
+  .ll-panel { padding:20px; }
+  .ll-review { border-radius:0; }
 }
